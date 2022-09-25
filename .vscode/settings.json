@@ -14,6 +14,13 @@
         "Ex12.C": "cpp",
         "Ex13.C": "cpp",
         "Ex14.C": "cpp",
-        "Ex15.C": "cpp"
-    }
+        "Ex15.C": "cpp",
+        "Ex16.C": "cpp",
+        "Ex17.C": "cpp",
+        "Ex18.C": "cpp",
+        "Ex19.C": "cpp",
+        "Ex20.C": "cpp",
+        "Ex21.C": "cpp"
+    },
+    "C_Cpp.errorSquiggles": "Enabled"
 }
