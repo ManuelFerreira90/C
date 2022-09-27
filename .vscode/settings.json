@@ -20,7 +20,9 @@
         "Ex18.C": "cpp",
         "Ex19.C": "cpp",
         "Ex20.C": "cpp",
-        "Ex21.C": "cpp"
+        "Ex21.C": "cpp",
+        "endereco.h": "c",
+        "dadosconta.h": "c"
     },
     "C_Cpp.errorSquiggles": "Enabled"
 }
