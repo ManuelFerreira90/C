@@ -22,7 +22,8 @@
         "Ex20.C": "cpp",
         "Ex21.C": "cpp",
         "endereco.h": "c",
-        "dadosconta.h": "c"
+        "dadosconta.h": "c",
+        "tadlista_tarefas.h": "c"
     },
     "C_Cpp.errorSquiggles": "Enabled"
 }
