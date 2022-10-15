@@ -3,7 +3,7 @@ typedef char Itemtarefa;
 
 //declarando estrutura tarefa
 typedef struct{
-  Itemtarefa tarefa.
+  Itemtarefa tarefa;
 }Ttarefa;
 
 //declarando lista tarefa

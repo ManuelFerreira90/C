@@ -53,12 +53,6 @@ void imprimir(Lista_T *lista){
 }
 
 
-
-
-
-
-
-
 //instrucoes
 void instrucoes(){
     printf("1 para inserir tarefa.\n"
