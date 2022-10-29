@@ -14,7 +14,7 @@ typedef struct{
 
 //prototipos
 void iniciar(Lista_T *lista);
-void inserir(Lista_T *lista);
-void remover(Lista_T *lista);
+void inserir(Lista_T *lista, Itemtarefa *ch);
+void remover(Lista_T *lista, Itemtarefa *ch);
 void imprimir(Lista_T *lista);
 void instrucoes();
