@@ -28,11 +28,11 @@ void remover(Lnum *A){
 void imprimir(Lnum *A){
     int i;
     for(i=0;i<A->topo;i++){
-        printf("%d --> ", A->ptr[i].n);
         if(i == A->topo-1){
             printf("%d", A->ptr[i].n);
             return;
         }
+        printf("%d --> ", A->ptr[i].n); 
     }
 }
 

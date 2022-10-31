@@ -8,7 +8,6 @@ int main(){
 
     inicar(&lista);
 
-    char tarefa[30];
     int escolha;
 
     instrucoes();
@@ -19,7 +18,7 @@ int main(){
         switch (escolha){
             case 0:
                 printf("Digite um numero.\n");
-                scanf("%s",tarefa);
+                scanf("%d",&(obj.n));
                 inserir(&lista, obj);
                 break;
         
