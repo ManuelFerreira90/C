@@ -19,17 +19,20 @@ void inserir(Lpilha *l, Tpilha obj){
     l->topo = aux1;
 }
 
-void remover(Lpilha *l){
+int remover(Lpilha *l){
+    int dado;
     if(vazia(l)==NULL){ 
         printf("Lista vazia.\n");
-        return;
+        return 0;
     }
-
     Apont_P aux1;
     aux1 = l->topo;
+    dado = aux1->num.n;
     l->topo = l->topo->prox;
+    aux1->prox = NULL;
     free(aux1);
     printf("Elemento removido.\n");
+    return dado;
 }
 
 void imprimir(Lpilha *l){

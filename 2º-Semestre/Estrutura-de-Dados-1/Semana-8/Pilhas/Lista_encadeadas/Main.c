@@ -23,7 +23,7 @@ int main(){
         
             case 1:
                 printf("Primeiro elemento será removido.\n");
-                remover(&lista);
+                printf("Item removido: %d",remover(&lista));
                 break;
 
             case 2:

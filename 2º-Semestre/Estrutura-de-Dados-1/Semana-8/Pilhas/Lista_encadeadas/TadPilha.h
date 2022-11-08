@@ -16,6 +16,6 @@ typedef struct{
 Apont_P vazia(Lpilha *l);
 void iniciar(Lpilha *l);
 void inserir(Lpilha *l, Tpilha obj);
-void remover(Lpilha *l);
+int remover(Lpilha *l);
 void imprimir(Lpilha *l);
 void instrucoes();
