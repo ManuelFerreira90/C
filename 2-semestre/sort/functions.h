@@ -1,4 +1,3 @@
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -95,5 +94,83 @@ void heapsort(int *v, int tam){
     printf("heapsort:\n");
     imprimir(v, tam);
 
+    return;
+}
+
+//shell sort
+void shellsort(int *v, int tam){
+    int h,i,var,j;
+    while(h<tam){
+        h=h*3+1;
+    }
+    h = h / 3;
+    while(h>0){
+        for(i=h;i<tam;i++){
+            var = v[i];
+            j = i;
+            while(j>=h && v[j-h]>var){
+                v[j] = v[j-h];
+                j = j-h; 
+            }
+            v[j]=var;
+        }
+        h=h/2;
+    }    
+
+    printf("shellsort:\n");
+    imprimir(v, tam);
+    
+    return;
+}
+
+//quicksort
+int metodoquicksort(int *v,int left,int right){
+    int meio = (left + right) / 2;
+    int i = left - 1;
+    int j = right + 1;
+    int pivo = v[meio],aux;
+    while(1){
+        do{
+            i++;
+        }while(v[i]<pivo);
+        do{
+            j--;
+        }while(v[j]>pivo);
+        if(i>=j) return j;
+        aux = v[i];
+        v[i] = v[j];
+        v[j] = aux;
+        
+    }
+}
+
+void quicksort(int *v,int left,int right){
+    int var;
+    if(left < right){
+        var = metodoquicksort(v,left,right);
+        quicksort(v,left,var);
+        quicksort(v,var+1,right);
+    }
+    
+    return;
+}
+
+//merge sort
+void metodomerge(int *v,int inicio,int meio, int fim){
+    
+    
+    return;
+}
+
+void mergesort(int *v,int inicio,int fim){
+    int meio;
+    if(fim-inicio>1){
+        meio = (inicio + fim)/2;
+        mergesort(v,inicio,meio);
+        mergesort(v,meio,fim);
+        metodomerge(v,inicio,meio,fim);
+    }
+
+    
     return;
 }
