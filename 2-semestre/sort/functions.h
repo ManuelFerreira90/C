@@ -156,21 +156,27 @@ void quicksort(int *v,int left,int right){
 }
 
 //merge sort
-void metodomerge(int *v,int inicio,int meio, int fim){
-    
+void metodomerge(int *v,int *vaux,int inicio,int meio, int fim){
+    int i,j=0,k=0;
+    for(i=inicio;i<=fim;i++) vaux[i] = v[i];
+    j=inicio;
+    k=meio+1;
+    for(i=inicio;i<=fim;i++){
+    	if(j>meio) v[i] = vaux[k++];
+    	else if(k>fim) v[i] =vaux[j++];
+    	else if(vaux[j] < vaux[k]) v[i] = vaux[j++];
+    	else v[i] = vaux[k++]; 
+    }	
     
     return;
 }
 
-void mergesort(int *v,int inicio,int fim){
+void mergesort(int *v,int *vaux,int inicio,int fim){
     int meio;
-    if(fim-inicio>1){
+    if(inicio < fim){
         meio = (inicio + fim)/2;
-        mergesort(v,inicio,meio);
-        mergesort(v,meio,fim);
-        metodomerge(v,inicio,meio,fim);
+        mergesort(v,vaux,inicio,meio);
+        mergesort(v,vaux,meio+1,fim);
+        metodomerge(v,vaux,inicio,meio,fim);
     }
-
-    
-    return;
 }
